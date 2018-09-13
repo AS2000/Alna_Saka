@@ -24,7 +24,6 @@ public class CalculateBranches {
 
             if (branchQty > longestTrank) {
                 longestTrank = branchQty;
-                branchQty--;
             }
 
             return false;
@@ -38,6 +37,8 @@ public class CalculateBranches {
                 return true;
             }
         }
+
+        branchQty--;
 
         return false;
     }
